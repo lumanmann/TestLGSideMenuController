@@ -19,15 +19,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
         
-        let rootViewController = UIViewController()
+        let rootViewController = HomeViewController()
+        let leftViewController = LeftMenuTableViewController()
       
-        
-        let navigationController = UINavigationController(rootViewController: rootViewController)
+        let navigationController = CustomNavigationController(rootViewController: rootViewController)
         
         let sideMenuController = LGSideMenuController(rootViewController: navigationController)
-     
         
+        // setup left view
+        sideMenuController.leftViewController = leftViewController
+        rootViewController.leftItemCallback = { sideMenuController.toggleLeftViewAnimated()
+        }
+        
+        // set side view width
+        sideMenuController.leftViewWidth = 250.0;
+        
+        // set animation
+        // default: no animation
+        sideMenuController.leftViewPresentationStyle = .scaleFromLittle
+        
+        // set Container Controller bg color
+        sideMenuController.view.backgroundColor = .white
+
         self.window?.rootViewController = sideMenuController
+        
         return true
     }
 

@@ -13,7 +13,18 @@ class CustomNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationBar.isTranslucent = true
+        
+        self.navigationBar.backIndicatorImage = UIImage(named: "iconCancelStopExit")
+        self.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "iconCancelStopExit")
+        
+        
+        
+        self.navigationBar.tintColor = .redViolet
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.redViolet, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 23.0, weight: .regular)]
+
+
     }
     
 

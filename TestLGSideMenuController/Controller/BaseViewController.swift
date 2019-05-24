@@ -9,22 +9,22 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
+    let button = BaseButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.view.addSubview(button)
+        
+        button.addTarget(self, action: #selector(selfDismiss(_:)), for: .touchUpInside)
+        NSLayoutConstraint.activate([button.widthAnchor.constraint(equalToConstant: 18),button.heightAnchor.constraint(equalTo: button.widthAnchor),
+            button.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            button.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20)])
+       
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func selfDismiss(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
 
 }
