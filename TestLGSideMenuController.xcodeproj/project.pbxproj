@@ -7,21 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		735517BAB8961E3FEE8F92E1 /* Pods_TestLGSideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A809B10E7BBC6EBC8D190D6 /* Pods_TestLGSideMenuController.framework */; };
 		E09A06202297F507007E1D41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A061F2297F507007E1D41 /* AppDelegate.swift */; };
-		E09A06222297F507007E1D41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A06212297F507007E1D41 /* ViewController.swift */; };
+		E09A06222297F507007E1D41 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A06212297F507007E1D41 /* HomeViewController.swift */; };
 		E09A06252297F507007E1D41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E09A06232297F507007E1D41 /* Main.storyboard */; };
 		E09A06272297F508007E1D41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E09A06262297F508007E1D41 /* Assets.xcassets */; };
 		E09A062A2297F508007E1D41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E09A06282297F508007E1D41 /* LaunchScreen.storyboard */; };
+		E09A06392297FDA5007E1D41 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A06382297FDA5007E1D41 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6EF1E1412CE05491594D5647 /* Pods-TestLGSideMenuController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLGSideMenuController.debug.xcconfig"; path = "Target Support Files/Pods-TestLGSideMenuController/Pods-TestLGSideMenuController.debug.xcconfig"; sourceTree = "<group>"; };
+		8A809B10E7BBC6EBC8D190D6 /* Pods_TestLGSideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestLGSideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09A061C2297F507007E1D41 /* TestLGSideMenuController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLGSideMenuController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09A061F2297F507007E1D41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E09A06212297F507007E1D41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E09A06212297F507007E1D41 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E09A06242297F507007E1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E09A06262297F508007E1D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E09A06292297F508007E1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E09A062B2297F508007E1D41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E09A06312297F6E9007E1D41 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		E09A06382297FDA5007E1D41 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F051C5C7D502EE74479DAF51 /* Pods-TestLGSideMenuController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLGSideMenuController.release.xcconfig"; path = "Target Support Files/Pods-TestLGSideMenuController/Pods-TestLGSideMenuController.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735517BAB8961E3FEE8F92E1 /* Pods_TestLGSideMenuController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD6B467105D83075D6B86DD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EF1E1412CE05491594D5647 /* Pods-TestLGSideMenuController.debug.xcconfig */,
+				F051C5C7D502EE74479DAF51 /* Pods-TestLGSideMenuController.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C738F13183620FDD33A33BD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A809B10E7BBC6EBC8D190D6 /* Pods_TestLGSideMenuController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E09A06132297F507007E1D41 = {
 			isa = PBXGroup;
 			children = (
 				E09A061E2297F507007E1D41 /* TestLGSideMenuController */,
 				E09A061D2297F507007E1D41 /* Products */,
+				AD6B467105D83075D6B86DD0 /* Pods */,
+				C738F13183620FDD33A33BD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +81,24 @@
 		E09A061E2297F507007E1D41 /* TestLGSideMenuController */ = {
 			isa = PBXGroup;
 			children = (
+				E09A063A2297FE0E007E1D41 /* Controller */,
 				E09A061F2297F507007E1D41 /* AppDelegate.swift */,
-				E09A06212297F507007E1D41 /* ViewController.swift */,
+				E09A06382297FDA5007E1D41 /* Extensions.swift */,
 				E09A06232297F507007E1D41 /* Main.storyboard */,
 				E09A06262297F508007E1D41 /* Assets.xcassets */,
 				E09A06282297F508007E1D41 /* LaunchScreen.storyboard */,
 				E09A062B2297F508007E1D41 /* Info.plist */,
+				E09A06312297F6E9007E1D41 /* Header.h */,
 			);
 			path = TestLGSideMenuController;
+			sourceTree = "<group>";
+		};
+		E09A063A2297FE0E007E1D41 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E09A06212297F507007E1D41 /* HomeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E09A062E2297F508007E1D41 /* Build configuration list for PBXNativeTarget "TestLGSideMenuController" */;
 			buildPhases = (
+				0415D1ED985FD1D26804F9EE /* [CP] Check Pods Manifest.lock */,
 				E09A06182297F507007E1D41 /* Sources */,
 				E09A06192297F507007E1D41 /* Frameworks */,
 				E09A061A2297F507007E1D41 /* Resources */,
+				38315F60EDCE71C77964E291 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +169,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0415D1ED985FD1D26804F9EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestLGSideMenuController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38315F60EDCE71C77964E291 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestLGSideMenuController/Pods-TestLGSideMenuController-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestLGSideMenuController/Pods-TestLGSideMenuController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E09A06182297F507007E1D41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E09A06222297F507007E1D41 /* ViewController.swift in Sources */,
+				E09A06392297FDA5007E1D41 /* Extensions.swift in Sources */,
+				E09A06222297F507007E1D41 /* HomeViewController.swift in Sources */,
 				E09A06202297F507007E1D41 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +367,7 @@
 		};
 		E09A062F2297F508007E1D41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF1E1412CE05491594D5647 /* Pods-TestLGSideMenuController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +378,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appimc.natalie.TestLGSideMenuController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/natalie/Desktop/TestLGSideMenuController/TestLGSideMenuController/Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,6 +386,7 @@
 		};
 		E09A06302297F508007E1D41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F051C5C7D502EE74479DAF51 /* Pods-TestLGSideMenuController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +397,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appimc.natalie.TestLGSideMenuController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/natalie/Desktop/TestLGSideMenuController/TestLGSideMenuController/Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  TestLGSideMenuController
 //
 //  Created by Natalie Ng on 2019/5/24.
@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class HomeViewController: UIViewController {
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .white
+ 
     }
 
 

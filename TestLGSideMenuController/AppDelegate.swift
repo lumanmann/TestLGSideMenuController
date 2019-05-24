@@ -15,7 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        self.window = UIWindow()
+        self.window?.makeKeyAndVisible()
+        
+        let rootViewController = UIViewController()
+      
+        
+        let navigationController = UINavigationController(rootViewController: rootViewController)
+        
+        let sideMenuController = LGSideMenuController(rootViewController: navigationController)
+     
+        
+        self.window?.rootViewController = sideMenuController
         return true
     }
 
