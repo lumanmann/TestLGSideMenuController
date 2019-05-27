@@ -19,6 +19,7 @@ My idea is to add a callback to the view controller on where the related navigat
 The usage is written in the [HomeViewController](https://github.com/lumanmann/TestLGSideMenuController/blob/master/TestLGSideMenuController/Controller/HomeViewController.swift) and [AppDelegate](https://github.com/lumanmann/TestLGSideMenuController/blob/master/TestLGSideMenuController/AppDelegate.swift) file
 
 @[HomeViewController](https://github.com/lumanmann/TestLGSideMenuController/blob/master/TestLGSideMenuController/Controller/HomeViewController.swift)
+
 To implement the callback block set to it, assign leftNavItemClicked(_:UIBarButtonItem) to the navigation item:
 
 ```swift
@@ -37,6 +38,7 @@ var leftItemCallback: (() -> Void)?
     }
 ```
 @[AppDelegate](https://github.com/lumanmann/TestLGSideMenuController/blob/master/TestLGSideMenuController/AppDelegate.swift)
+
 Set the callback action to the side menu controller:
 ```swift
 rootViewController.leftItemCallback = { sideMenuController.toggleLeftViewAnimated()
@@ -83,8 +85,6 @@ sideMenuController.leftViewPresentationStyle = .scaleFromLittle
 ```
 
 ### Set Side Menu Width
-default: no animation
-
 ```swift
 sideMenuController.leftViewWidth = 250.0;
 ```
