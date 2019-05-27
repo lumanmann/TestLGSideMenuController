@@ -1,11 +1,15 @@
 # Test on LGSideMenuController Framework
 
-This repo is a test of applying [LGSideMenuController](https://github.com/Friend-LGA/LGSideMenuController) framework created by Friend-LGA on a Swift APP Project
+This repo is a demo of applying [LGSideMenuController](https://github.com/Friend-LGA/LGSideMenuController) framework created by Friend-LGA on a Swift APP Project
+
+## About
+LGSideMenuController, which is written in objective-c, provides API to create side menus(both left and right) on iOS Application, meanwhile supporting animation transitions.
 
 ## Usage 
 The common usage is as stated on its README.
-Here is a test of its usage:
+Here is a demo of its usage with customization"
 (leftViewPresentationStyle: scaleFromLittle)
+
 ![](https://i.imgur.com/FmE7cZ7.gif)
 
 
